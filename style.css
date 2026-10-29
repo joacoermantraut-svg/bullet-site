@@ -96,7 +96,7 @@
   .svc.open .ic{transform:rotate(90deg)}
   .svc.open p{opacity:1;transform:none}
   @media (hover:hover){
-    .svc{cursor:default;min-height:134px}
+    .svc{cursor:default;min-height:160px}
     .svc:hover h3{color:var(--naranja)}
     .svc:hover .ic{transform:rotate(90deg)}
     .svc:hover p{opacity:1;transform:none}
