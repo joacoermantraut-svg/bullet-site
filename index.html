@@ -148,7 +148,7 @@
   }),{threshold:.6});
   document.querySelectorAll('[data-to]').forEach(el=>{el.textContent=(el.dataset.pre||'')+'0'+(el.dataset.suf||'');countIO.observe(el)});
 
-  // formulario: cada envío llega por mail a admin@ (Apps Script de la cuenta de BULLET, ver scripts/formulario-apps-script.gs)
+  // formulario: cada envío llega por mail a contacto@ (Apps Script de la cuenta de BULLET, ver scripts/formulario-apps-script.gs)
   const FORM_URL='https://script.google.com/macros/s/AKfycbzWjv5-NySOIOV1jdcDc9VhuOZ-Ah6skoYGHdxL6swo6ZbbHzCXRs2lEY8gmc1sWaw/exec';
   const form=document.getElementById('form'),msg=document.getElementById('formMsg');
   form.addEventListener('submit',async e=>{
