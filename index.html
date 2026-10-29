@@ -148,21 +148,18 @@
   }),{threshold:.6});
   document.querySelectorAll('[data-to]').forEach(el=>{el.textContent=(el.dataset.pre||'')+'0'+(el.dataset.suf||'');countIO.observe(el)});
 
-  // formulario: cada envío llega por mail a admin@ (vía FormSubmit)
-  const FORM_URL='https://formsubmit.co/ajax/admin@bulletcreativeagency.com';
+  // formulario: cada envío llega por mail a admin@ (Apps Script de la cuenta de BULLET, ver scripts/formulario-apps-script.gs)
+  const FORM_URL='';
   const form=document.getElementById('form'),msg=document.getElementById('formMsg');
   form.addEventListener('submit',async e=>{
     e.preventDefault();
     if(!form.checkValidity()){msg.textContent='Completá nombre, email y mensaje.';msg.className='form-msg full err';return}
     const btn=form.querySelector('button');btn.disabled=true;btn.textContent='Enviando…';msg.textContent='';
     // se manda como formulario común (sin JSON) para que el navegador no haga consulta previa (CORS)
-    const data=new FormData(form);
-    data.append('_subject',`Nuevo contacto web: ${data.get('Nombre')}${data.get('Empresa')?' ('+data.get('Empresa')+')':''}`);
-    data.append('_template','table');
     try{
-      const r=await fetch(FORM_URL,{method:'POST',headers:{Accept:'application/json'},body:data});
-      const j=await r.json().catch(()=>({}));
-      if(!r.ok||j.success==='false'||j.success===false)throw new Error(j.message||r.status);
+      if(!FORM_URL)throw new Error('sin configurar');
+      const r=await fetch(FORM_URL,{method:'POST',body:new URLSearchParams(new FormData(form))});
+      if((await r.text()).trim()!=='ok')throw new Error(r.status);
       form.reset();btn.textContent='¡Enviado!';msg.textContent='Gracias, te escribimos pronto.';msg.className='form-msg full ok';
     }catch(err){
       btn.disabled=false;btn.textContent='Enviar mensaje';
