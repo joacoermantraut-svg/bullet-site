@@ -16,9 +16,6 @@
   .pf-head h1 b{color:var(--naranja)}
   .pf-head .row{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-top:40px;flex-wrap:wrap}
   .pf-head p{font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--gris);max-width:44ch}
-  .pf-head .count{display:flex;align-items:baseline;gap:12px}
-  .pf-head .count strong{font-size:clamp(56px,6vw,88px);font-weight:500;letter-spacing:-.05em;line-height:1;color:var(--naranja)}
-  .pf-head .count span{color:var(--gris);font-size:15px;line-height:1.3}
   .pf-head .shapes{position:absolute;top:150px;right:0;--s:58px}
 
   /* grilla pareja: todas las marcas con el mismo peso */
@@ -73,7 +70,6 @@
   <h1 class="rv"><span>Lo que hacemos</span> <b>habla por nosotros.</b></h1>
   <div class="row">
     <p class="rv">Marcas, campañas, contenido y redes para emprendimientos y empresas que decidieron dejar de pasar desapercibidas.</p>
-    <div class="count rv"><strong id="count">45</strong><span>proyectos<br>y contando</span></div>
   </div>
 </header>
 
@@ -110,7 +106,6 @@
 <script src="assets/portfolio/proyectos.js"></script>
 <script>
   const P=window.PROYECTOS;
-  document.getElementById('count').textContent=P.length;
   document.getElementById('grid').innerHTML=P.map((p,i)=>`
     <a class="work rv" href="proyecto.html?p=${p.url.split('my-portfolio/')[1]}">
       <div class="pic"><img src="${p.img}" alt="${p.name}" loading="${i<6?'eager':'lazy'}"><span class="tag">Ver proyecto</span></div>
