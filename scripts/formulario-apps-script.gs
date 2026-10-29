@@ -1,10 +1,11 @@
 // BULLET · formulario de contacto de la web
 // Cada envío manda un mail a admin@ y queda anotado en la hoja "Contactos".
-// Crear una planilla en la cuenta admin@bulletcreativeagency.com → Extensiones → Apps Script → pegar esto.
+// Proyecto de Apps Script en la cuenta admin@bulletcreativeagency.com; escribe en la planilla "Contactos web BULLET".
 // Implementar → Nueva implementación → Tipo "Aplicación web", Ejecutar como "Yo", Acceso "Cualquier persona".
 // Copiar la URL /exec y pegarla en FORM_URL (index.html).
 
 const DESTINO = 'admin@bulletcreativeagency.com';
+const PLANILLA = '1DBWGSgTvh7VcJp8zPwsqhYT_cdUmRm8erPgCTYFKiPk';   // "Contactos web BULLET"
 const HOJA = 'Contactos';
 const CAMPOS = ['Nombre', 'Empresa', 'email', 'Teléfono', 'Servicio', 'Mensaje'];
 
@@ -35,8 +36,7 @@ function doPost(e) {
 }
 
 function guardar(d) {
-  const ss = SpreadsheetApp.getActive();
-  if (!ss) return;
+  const ss = SpreadsheetApp.openById(PLANILLA);
   let hoja = ss.getSheetByName(HOJA);
   if (!hoja) {
     hoja = ss.insertSheet(HOJA);
