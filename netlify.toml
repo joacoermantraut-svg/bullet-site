@@ -1,0 +1,5 @@
+# La web se publica en Netlify (proyecto "bulletcreativeagency", cuenta Trigger):
+#   python3 scripts/generar_paginas.py   (si cambió algún proyecto del portfolio)
+#   netlify deploy --prod --dir . --no-build --site d3407972-9a3b-4570-8999-1f5df5682f2e
+[build]
+  publish = "."

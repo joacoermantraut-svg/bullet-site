@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CASA CALAMAR — Portafolio BULLET, agencia creativa en Mar del Plata</title>
+<meta name="description" content="Un nuevo proyecto impulsado por El Calamar Loco y Casa Pampa, que ofrece 16 casas de mar frente a la playa en Chapadmalal. Desarrollamos una estrategia de…">
+<link rel="canonical" href="https://bulletcreativeagency.com/proyectos/casa-calamar/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<meta name="theme-color" content="#E74F1E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BULLET">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="CASA CALAMAR — BULLET">
+<meta property="og:description" content="Un nuevo proyecto impulsado por El Calamar Loco y Casa Pampa, que ofrece 16 casas de mar frente a la playa en Chapadmalal. Desarrollamos una estrategia de…">
+<meta property="og:url" content="https://bulletcreativeagency.com/proyectos/casa-calamar/">
+<meta property="og:image" content="https://bulletcreativeagency.com/assets/proyectos/14/portada.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CreativeWork", "name": "CASA CALAMAR — BULLET", "description": "Un nuevo proyecto impulsado por El Calamar Loco y Casa Pampa, que ofrece 16 casas de mar frente a la playa en Chapadmalal. Desarrollamos una estrategia de comunicación digital integral con el objetivo de posicionar el proyecto en redes sociales. En BULLET, nos encargamos de la gestión de redes…", "url": "https://bulletcreativeagency.com/proyectos/casa-calamar/", "image": "https://bulletcreativeagency.com/assets/proyectos/14/portada.jpg", "creator": {"@id": "https://bulletcreativeagency.com/#bullet"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://bulletcreativeagency.com/"}, {"@type": "ListItem", "position": 2, "name": "Portafolio", "item": "https://bulletcreativeagency.com/portfolio.html"}, {"@type": "ListItem", "position": 3, "name": "CASA CALAMAR", "item": "https://bulletcreativeagency.com/proyectos/casa-calamar/"}]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css?v=20261030125644">
+<style>
+  nav ul a.active::after{scale:1 1}
+
+  .pj-head{padding:140px 0 48px}
+  .crumbs{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:14px;color:var(--gris)}
+  .crumbs a{display:inline-flex;align-items:center;gap:8px;font-weight:500;color:var(--texto)}
+  .crumbs a:hover{color:var(--naranja)}
+  .pj-head h1{font-weight:400;font-size:clamp(40px,7vw,104px);line-height:.95;letter-spacing:-.045em;margin-top:28px}
+  .pj-head h1 b{color:var(--naranja)}
+  .pj-row{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;margin-top:36px;align-items:start}
+  .pj-row p{font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:var(--gris);max-width:52ch}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+  .chips span{font-size:14px;font-weight:500;padding:9px 14px;border-radius:999px;background:var(--card);display:inline-flex;align-items:center;gap:8px}
+  .chips span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--naranja)}
+  .chips span:nth-child(3n+2)::before{background:var(--lila);border-radius:0 99px 99px 0}
+  .chips span:nth-child(3n)::before{background:var(--rosa);border-radius:2px}
+
+  .pj-cover{border-radius:var(--r);overflow:hidden;aspect-ratio:16/8;background:#2B2523}
+  .pj-cover img{width:100%;height:100%;object-fit:cover;scale:1.06;transition:scale 1.4s cubic-bezier(.2,.7,.2,1)}
+  .pj-cover.in img{scale:1}
+
+  /* galería: horizontales a lo ancho, verticales de a dos */
+  .gal{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;grid-auto-flow:dense;align-items:start}
+  .gal .m{border-radius:var(--r);overflow:hidden;background:var(--card);cursor:zoom-in;position:relative}
+  .gal .m.full{grid-column:1/-1}
+  .gal .m img,.gal .m video{display:block;width:100%;height:auto;transition:scale .8s cubic-bezier(.2,.7,.2,1)}
+  .gal .m:hover img{scale:1.03}
+  .gal .m.vid{cursor:default}
+  .gal .m.vid::after{content:"";position:absolute;top:16px;right:16px;width:12px;height:12px;border-radius:50%;background:var(--naranja);box-shadow:0 0 0 6px rgba(231,79,30,.25)}
+
+  /* siguiente proyecto */
+  .next{display:grid;grid-template-columns:1fr 1.2fr;gap:18px;margin-top:120px;align-items:stretch}
+  .next .lbl{background:var(--card);border-radius:var(--r);padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+  .next .lbl small{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+  .next .lbl strong{display:block;font-size:clamp(32px,4.4vw,60px);font-weight:500;letter-spacing:-.04em;line-height:1;margin-top:14px}
+  .next .lbl .go{display:inline-flex;align-items:center;gap:12px;font-weight:700;color:var(--naranja)}
+  .next .lbl .go i{width:44px;height:44px;border-radius:50%;background:var(--naranja);display:grid;place-items:center;color:#fff;font-style:normal;transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+  .next .pic{border-radius:var(--r);overflow:hidden;aspect-ratio:16/10;background:#2B2523}
+  .next .pic img{width:100%;height:100%;object-fit:cover;transition:scale .9s cubic-bezier(.2,.7,.2,1)}
+  .next:hover .pic img{scale:1.05}
+  .next:hover .go i{transform:translateX(6px)}
+  .others{display:flex;justify-content:space-between;gap:16px;margin-top:18px;font-size:15px}
+  .others a{font-weight:500}
+  .others a:hover{color:var(--naranja)}
+
+  .pj-cta{margin-top:110px}
+  .pj-cta .cta{grid-template-columns:1.4fr auto;align-items:end}
+  .pj-cta .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .pj-cta .btn.ghost{border-color:#fff;color:#fff}
+  .pj-cta .btn.ghost:hover{background:#fff;color:var(--naranja)}
+
+  /* visor de fotos */
+  .lb{position:fixed;inset:0;z-index:200;background:rgba(20,14,12,.92);display:none;align-items:center;justify-content:center;padding:24px}
+  .lb.on{display:flex}
+  .lb img{max-width:100%;max-height:100%;border-radius:16px}
+  .lb button{position:absolute;background:var(--card);border:0;width:48px;height:48px;border-radius:50%;font:inherit;font-size:20px;cursor:pointer;color:var(--texto)}
+  .lb .x{top:20px;right:20px}
+  .lb .pv{left:20px;top:50%;translate:0 -50%}
+  .lb .nx{right:20px;top:50%;translate:0 -50%}
+  .lb button:hover{background:var(--naranja);color:#fff}
+
+  .empty{padding:200px 0;text-align:center}
+
+  @media (max-width:900px){
+    .pj-head{padding-top:120px}
+    .pj-row,.next,.pj-cta .cta{grid-template-columns:1fr}
+    .chips{justify-content:flex-start}
+    .pj-cover{aspect-ratio:4/3}
+  }
+  @media (max-width:560px){
+    .gal{grid-template-columns:1fr;gap:12px}
+    .others span{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="logo" aria-label="BULLET"></a>
+  <ul>
+    <li><a href="/portfolio.html" class="active">Portafolio</a></li>
+    <li><a href="/nosotros.html">Nosotros</a></li>
+    <li><a href="/#servicios">Servicios</a></li>
+    <li><a href="/#clientes">Clientes</a></li>
+    <li><a href="/#proceso">Cómo trabajamos</a></li>
+  </ul>
+  <a href="/#contacto" class="btn"><span class="dot"></span>Hablemos</a>
+</nav>
+
+<main id="app">
+  <header class="pj-head wrap">
+    <div class="crumbs rv"><a href="/portfolio.html">← Portafolio</a><span>Proyecto 14 / 45</span></div>
+    <h1 class="rv">CASA CALAMAR<b>.</b></h1>
+    <div class="pj-row">
+      <p class="rv">Un nuevo proyecto impulsado por El Calamar Loco y Casa Pampa, que ofrece 16 casas de mar frente a la playa en Chapadmalal.<br>Desarrollamos una estrategia de comunicación digital integral con el objetivo de posicionar el proyecto en redes sociales.<br>En BULLET, nos encargamos de la gestión de redes sociales y junto a Trigger Creators, la producción audiovisual profesional.</p>
+      <div class="chips rv"><span>Social media</span><span>Contenido</span></div>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="pj-cover" id="cover"><img src="/assets/proyectos/14/portada.jpg" alt="CASA CALAMAR"></div>
+    <div class="gal">
+      <div class="m vid rv" style="aspect-ratio:980/1742"><video data-src="/assets/proyectos/14/01.mp4" poster="/assets/proyectos/14/01-poster.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="m rv full" style="aspect-ratio:980/551" data-k="0"><img src="/assets/proyectos/14/02.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="551"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="1"><img src="/assets/proyectos/14/03.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="2"><img src="/assets/proyectos/14/04.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv full" style="aspect-ratio:980/551" data-k="3"><img src="/assets/proyectos/14/05.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="551"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="4"><img src="/assets/proyectos/14/06.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="5"><img src="/assets/proyectos/14/07.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="6"><img src="/assets/proyectos/14/08.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="7"><img src="/assets/proyectos/14/09.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv full" style="aspect-ratio:980/652" data-k="8"><img src="/assets/proyectos/14/10.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="652"></div>
+      <div class="m rv" style="aspect-ratio:980/1473" data-k="9"><img src="/assets/proyectos/14/11.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="1473"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="10"><img src="/assets/proyectos/14/12.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m vid rv" style="aspect-ratio:980/1742"><video data-src="/assets/proyectos/14/13.mp4" poster="/assets/proyectos/14/13-poster.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="11"><img src="/assets/proyectos/14/14.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv" style="aspect-ratio:980/1473" data-k="12"><img src="/assets/proyectos/14/15.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="1473"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="13"><img src="/assets/proyectos/14/16.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m vid rv" style="aspect-ratio:980/1742"><video data-src="/assets/proyectos/14/17.mp4" poster="/assets/proyectos/14/17-poster.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="14"><img src="/assets/proyectos/14/18.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="15"><img src="/assets/proyectos/14/19.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="16"><img src="/assets/proyectos/14/20.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="17"><img src="/assets/proyectos/14/21.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="18"><img src="/assets/proyectos/14/22.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="19"><img src="/assets/proyectos/14/23.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv" style="aspect-ratio:980/1473" data-k="20"><img src="/assets/proyectos/14/24.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="1473"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="21"><img src="/assets/proyectos/14/25.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/653" data-k="22"><img src="/assets/proyectos/14/26.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="653"></div>
+      <div class="m rv full" style="aspect-ratio:980/551" data-k="23"><img src="/assets/proyectos/14/27.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="551"></div>
+      <div class="m rv full" style="aspect-ratio:980/551" data-k="24"><img src="/assets/proyectos/14/28.jpg" alt="CASA CALAMAR: trabajo de BULLET" loading="lazy" width="980" height="551"></div>
+    </div>
+    <a class="next rv" href="/proyectos/tota/">
+      <div class="lbl"><div><small>Siguiente proyecto</small><strong>TOTA</strong></div><span class="go"><i>→</i>Ver proyecto</span></div>
+      <div class="pic"><img src="/assets/proyectos/15/portada.jpg" alt="TOTA" loading="lazy"></div>
+    </a>
+    <div class="others"><a href="/proyectos/puma/">← PUMA</a><span></span><a href="/portfolio.html">Ver todos los proyectos</a></div>
+  </div>
+</main>
+
+<section class="wrap pj-cta" style="padding-top:0">
+  <div class="cta rv">
+    <div class="shapes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div>
+      <p class="eyebrow">¿Sos el próximo?</p>
+      <h2>Tu marca puede ser <b>el próximo caso.</b></h2>
+    </div>
+    <div class="btns">
+      <a href="https://wa.me/5492234258381" class="btn wa" style="margin-top:0"><span class="dot"></span>Escribinos por WhatsApp</a>
+      <a href="/#contacto" class="btn ghost">Dejar un mensaje</a>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="foot">
+    <span class="logo" aria-label="BULLET"></span>
+    <ul>
+      <li><a href="https://www.instagram.com/bulletcreativeagency">Instagram</a></li>
+      <li><a href="https://ar.linkedin.com/company/bullet-creative">LinkedIn</a></li>
+      <li><a href="#">Política de privacidad</a></li>
+    </ul>
+    <span>© 2026 Bullet Creative Agency</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><img alt=""><button class="x" aria-label="Cerrar">✕</button><button class="pv" aria-label="Anterior">←</button><button class="nx" aria-label="Siguiente">→</button></div>
+
+<script>
+  const fotos=[...document.querySelectorAll('.gal .m[data-k] img')].map(i=>({src:i.getAttribute('src')}));
+
+  // videos: se cargan y reproducen solo cuando están en pantalla
+  const vio=new IntersectionObserver(es=>es.forEach(e=>{
+    const v=e.target;
+    if(e.isIntersecting){if(!v.src)v.src=v.dataset.src;v.play().catch(()=>{})}else v.pause();
+  }),{threshold:.25});
+  document.querySelectorAll('.gal video').forEach(v=>vio.observe(v));
+
+  // visor de fotos
+  const lb=document.getElementById('lb'),lbi=lb.querySelector('img');let k=0;
+  const show=n=>{k=(n+fotos.length)%fotos.length;lbi.src=fotos[k].src;lb.classList.add('on')};
+  document.querySelectorAll('.gal .m[data-k]').forEach(el=>el.addEventListener('click',()=>show(+el.dataset.k)));
+  lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+  lb.querySelector('.pv').onclick=e=>{e.stopPropagation();show(k-1)};
+  lb.querySelector('.nx').onclick=e=>{e.stopPropagation();show(k+1)};
+  lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on')});
+  addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;
+    if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(k-1);if(e.key==='ArrowRight')show(k+1)});
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.rv,#cover').forEach(el=>io.observe(el));
+
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+</script>
+</body>
+</html>

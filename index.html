@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BULLET — Agencia creativa</title>
-<meta name="description" content="Somos tu equipo creativo: branding, contenido y redes para que tu marca deje de pasar desapercibida.">
+<title>BULLET | Agencia de marketing, branding y redes en Mar del Plata</title>
+<meta name="description" content="Agencia creativa en Mar del Plata. Somos tu equipo de branding, diseño, redes sociales, contenido y pauta para que tu marca deje de pasar desapercibida.">
+<link rel="canonical" href="https://bulletcreativeagency.com/">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
@@ -20,6 +21,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://bulletcreativeagency.com/#bullet", "name": "BULLET Creative Agency", "alternateName": "Bullet", "url": "https://bulletcreativeagency.com/", "logo": "https://bulletcreativeagency.com/assets/icon-512.png", "image": "https://bulletcreativeagency.com/assets/og-bullet.jpg", "description": "Agencia creativa de marketing digital en Mar del Plata: branding, diseño gráfico, gestión de redes sociales, contenido audiovisual, pauta y páginas web.", "telephone": "+54 9 223 425-8381", "email": "contacto@bulletcreativeagency.com", "address": {"@type": "PostalAddress", "streetAddress": "Alvarado 1630", "addressLocality": "Mar del Plata", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "areaServed": "AR", "sameAs": ["https://www.instagram.com/bulletcreativeagency", "https://ar.linkedin.com/company/bullet-creative"], "knowsAbout": ["Branding", "Gestión de redes sociales", "Diseño gráfico", "Contenido audiovisual", "Publicidad digital", "Diseño web"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=20261030125644">
@@ -40,7 +42,7 @@
 
 <header class="hero">
   <div class="hero-media" id="heroMedia">
-    <video src="assets/hero.mp4" poster="assets/hero.jpg" autoplay muted loop playsinline></video>
+    <video src="assets/hero.mp4?v=2" poster="assets/hero.jpg" autoplay muted loop playsinline></video>
     <div class="hero-copy">
       <h1><span>Ideas que van</span> <b>directo al blanco.</b></h1>
       <div class="hero-row">
@@ -154,9 +156,13 @@
 </footer>
 
 <script>
-  const ids=[...Array(17).keys()].map(i=>i+1).filter(i=>i!==11);
-  const logos=ids.map(i=>`<div class="client"><img src="assets/clientes/c${i}.png" alt="Cliente ${i}"></div>`).join('');
-  document.getElementById('clients').innerHTML=`<div class="track">${logos}${logos}</div>`;
+  // logos de clientes: [número de archivo en assets/clientes/c<n>.png, nombre de la marca]
+  const CLIENTES=[[1,'Trigger Creators'],[2,'Pampa y Novillo'],[3,'Macson'],[4,'Munar Eventos'],[5,'López Bisoglio & Oyarbide'],
+    [6,'Preferentia Travel'],[7,'Zumex'],[8,'GastroWare'],[9,'Lion Global Sales Consulting'],[10,'Gitti'],[12,'Kalma Viandas'],
+    [13,'Alberto'],[14,'Du Cuir'],[15,'The Burger Garage'],[16,'Bunker'],[17,'RG Autos']];
+  const logos=h=>CLIENTES.map(([n,m])=>`<div class="client"${h}><img src="assets/clientes/c${n}.png" alt="${h?'':'Logo de '+m}"></div>`).join('');
+  // la segunda vuelta es solo para que la cinta no se corte
+  document.getElementById('clients').innerHTML=`<div class="track">${logos('')}${logos(' aria-hidden="true"')}</div>`;
 
   document.querySelectorAll('.svc').forEach(s=>s.addEventListener('click',()=>{
     const was=s.classList.contains('open');
