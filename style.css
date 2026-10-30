@@ -178,7 +178,7 @@
 
   @media (max-width:900px){
     nav ul{margin-left:auto;margin-right:16px}
-    nav ul li:not(:first-child){display:none}
+    nav ul li:nth-child(n+3){display:none}
     .hero-row{flex-direction:column;align-items:flex-start}
     .head,.cta{grid-template-columns:1fr}
     .head > p{justify-self:start}
@@ -198,5 +198,13 @@
     nav .btn{padding:12px 16px;font-size:14px}
     nav{padding-left:18px}
     nav .logo{width:96px;height:18px}
-    nav ul{margin-right:12px;font-size:14px}
+    nav ul{margin-right:12px;font-size:14px;gap:16px}
+    nav .logo{flex-shrink:0}
+    nav .btn .dot{display:none}
+    nav .btn{padding:11px 14px}
+  }
+  @media (max-width:420px){
+    nav{padding:14px 20px}
+    nav .btn{display:none}
+    nav ul{margin-right:0;gap:18px}
   }

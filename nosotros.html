@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nosotros — BULLET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261030125644">
+<style>
+  nav ul a.active::after{scale:1 1}
+
+  .ns-head{padding:150px 0 90px;position:relative}
+  .ns-head h1{font-weight:400;font-size:clamp(30px,6vw,92px);line-height:.98;letter-spacing:-.045em}
+  .ns-head h1 span,.ns-head h1 b{display:block}
+  .ns-head h1 b{color:var(--naranja)}
+  .ns-head .shapes{position:absolute;top:150px;right:0;--s:58px}
+  .story{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;margin-top:64px}
+  .story h3{font-weight:500;font-size:clamp(20px,2vw,26px);letter-spacing:-.02em;line-height:1.25}
+  .story div{display:grid;gap:16px;font-size:clamp(17px,1.4vw,19px);line-height:1.6;color:var(--gris)}
+  .story div p:last-child{color:var(--texto);font-weight:500}
+
+  /* equipo: foto, nombre y cargo */
+  .team{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 18px}
+  .member .pic{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--card)}
+  .member img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:scale .9s cubic-bezier(.2,.7,.2,1)}
+  .member:hover img{scale:1.05}
+  .member h3{font-weight:700;font-size:19px;letter-spacing:-.02em;margin-top:16px}
+  .member p{font-size:15px;color:var(--gris);margin-top:4px;display:flex;align-items:center;gap:8px}
+  .member small{display:block;font-size:14px;color:var(--gris);opacity:.75;margin:2px 0 0 16px}
+  .member p::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--naranja)}
+
+  .ns-cta{margin-top:120px}
+  .ns-cta .cta{grid-template-columns:1.4fr auto;align-items:end}
+  .ns-cta .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .ns-cta .btn.ghost{border-color:#fff;color:#fff}
+  .ns-cta .btn.ghost:hover{background:#fff;color:var(--naranja)}
+
+  @media (max-width:900px){
+    .ns-head{padding-top:120px}
+    .ns-head .shapes{position:static;margin-bottom:28px;--s:42px}
+    .story{grid-template-columns:1fr}
+    .team{grid-template-columns:repeat(3,1fr)}
+    .ns-cta .cta{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .team{grid-template-columns:1fr 1fr;gap:22px 12px}
+    .member h3{font-size:16px}
+    .member p{font-size:13px}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="logo" aria-label="BULLET"></a>
+  <ul>
+    <li><a href="portfolio.html">Portafolio</a></li>
+    <li><a href="nosotros.html" class="active">Nosotros</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="index.html#clientes">Clientes</a></li>
+    <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+  </ul>
+  <a href="index.html#contacto" class="btn"><span class="dot"></span>Hablemos</a>
+</nav>
+
+<header class="ns-head wrap">
+  <div class="shapes rv" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <h1 class="rv"><span>No somos solo una agencia.</span> <b>Somos parte de tu equipo.</b></h1>
+  <div class="story">
+    <h3 class="rv">Detrás de Bullet estamos Joaquín y Florencia.</h3>
+    <div class="rv">
+      <p>Nos conocimos trabajando en este mundo y decidimos armar una agencia que mezcle estrategia, creatividad y criterio. Bullet nació para resolver lo que muchas marcas necesitaban: alguien que entienda su visión y la traduzca en ideas que funcionen.</p>
+      <p>Hoy somos más que dos: un equipo de publicistas, licenciados en marketing, periodistas, diseñadores gráficos, filmmakers y creativos que aportan mirada, talento y visión estratégica.</p>
+      <p>Seguimos con las manos en cada proyecto. Escuchamos, pensamos, ejecutamos y acompañamos. Sin vueltas, y con ideas que marcan la diferencia.</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="team" id="team"></div>
+</main>
+
+<section class="wrap ns-cta" style="padding-top:0">
+  <div class="cta rv">
+    <div class="shapes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div>
+      <h2>Sumá a este equipo <b>a tu marca.</b></h2>
+    </div>
+    <div class="btns">
+      <a href="https://wa.me/5492234258381" class="btn wa" style="margin-top:0"><span class="dot"></span>Escribinos por WhatsApp</a>
+      <a href="index.html#contacto" class="btn ghost">Dejar un mensaje</a>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="foot">
+    <span class="logo" aria-label="BULLET"></span>
+    <ul>
+      <li><a href="https://www.instagram.com/bulletcreativeagency">Instagram</a></li>
+      <li><a href="https://ar.linkedin.com/company/bullet-creative">LinkedIn</a></li>
+      <li><a href="#">Política de privacidad</a></li>
+    </ul>
+    <span>© 2026 Bullet Creative Agency</span>
+  </div>
+</footer>
+
+<script>
+  // para sumar a alguien: agregar una línea acá (nombre, cargo, foto y, si tiene, título) y su foto en assets/equipo/<foto>.jpg (4:5)
+  const EQUIPO=[
+    ['Florencia Bethular','Co-Founder','florencia-bethular'],
+    ['Joaquín Ermantraut','Co-Founder','joaquin-ermantraut'],
+    ['Melina Berardi','Project Manager','melina-berardi','Lic. en Marketing'],
+    ['Florencia Martynowskyj','Project Manager','florencia-martynowskyj','Lic. en Publicidad'],
+    ['Micaela Cañon','Account Manager','micaela-canon','Lic. en Publicidad'],
+    ['Oriana Perrino','Graphic Designer','oriana-perrino','Lic. en Diseño Gráfico y Comunicación Audiovisual'],
+    ['Camila Batalla','Graphic Designer','camila-batalla','Lic. en Diseño Gráfico y Comunicación Audiovisual'],
+  ];
+  document.getElementById('team').innerHTML=EQUIPO.map(([n,c,f,t],i)=>`
+    <div class="member rv">
+      <div class="pic"><img src="assets/equipo/${f}.jpg" alt="${n}" loading="${i<4?'eager':'lazy'}"></div>
+      <h3>${n}</h3><p>${c}</p>${t?`<small>${t}</small>`:''}
+    </div>`).join('');
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(el.classList.contains('member')?(i%4)*80:0)+'ms';io.observe(el)});
+
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+</script>
+</body>
+</html>
