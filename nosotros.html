@@ -139,7 +139,7 @@
   ];
   document.getElementById('team').innerHTML=EQUIPO.map(([n,c,f,t],i)=>`
     <div class="member rv">
-      <div class="pic"><img src="assets/equipo/${f}.jpg" alt="${n}" loading="${i<4?'eager':'lazy'}"></div>
+      <div class="pic"><img src="assets/equipo/${f}.jpg?v=2" alt="${n}" loading="${i<4?'eager':'lazy'}"></div>
       <h3>${n}</h3><p>${c}</p>${t?`<small>${t}</small>`:''}
     </div>`).join('');
 
