@@ -3,3 +3,10 @@
 #   netlify deploy --prod --dir . --no-build --site d3407972-9a3b-4570-8999-1f5df5682f2e
 [build]
   publish = "."
+
+# Planificaciones para el cliente: la página la arma el sistema de BULLET (aprueba o corrige cada publicación).
+[[redirects]]
+  from = "/planificacion/*"
+  to = "https://sistema.bulletcreativeagency.com/planificacion/:splat"
+  status = 200
+  force = true
